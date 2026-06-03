@@ -195,7 +195,6 @@ let user = null;
 ```javascript
 let city;
 ```
-
 ---
 
 ## 4. What Does the `typeof` Operator Do?
@@ -236,5 +235,282 @@ Benefits of template literals are as follows:
 * Improved readability.
 * Support for multi-line strings.
 * Cleaner and more maintainable code compared to traditional string concatenation.
+
+# Functions and Control Flow
+
+## 1. What Is a Function?
+
+A function is a reusable building block of code designed to perform a specific task. Functions help organize code, improve readability, and reduce repetition.
+
+### Example
+
+```javascript
+function greet() {
+  console.log("Hello");
+}
+```
+
+---
+
+## 2. Compare Traditional Functions and Arrow Functions
+
+### Traditional Function
+
+```javascript
+function add(a, b) {
+  return a + b;
+}
+```
+
+### Arrow Function
+
+```javascript
+const add = (a, b) => a + b;
+```
+
+### Differences
+
+* Arrow functions have a shorter and more concise syntax.
+* Arrow functions do not have their own `this` value; they inherit it from their surrounding scope.
+  ### While
+* Traditional functions are better when you need a dynamic `this` value.
+* Traditional functions can be used as constructors, while arrow functions cannot.
+
+---
+
+## 3. What Are Default Parameters?
+
+Default parameters provide fallback values when no argument is supplied to a function.
+
+### Example
+
+```javascript
+function greet(name = "Guest") {
+  return `Hello ${name}`;
+}
+```
+
+### Explanation
+
+from the above code it means if no value is passed to the `name` parameter, the function automatically uses `"Guest"` as the default value.
+
+---
+
+## 4. Explain the Purpose of Conditional Statements (`if`, `else if`, `else`)
+
+Conditional statements allow programs to make decisions based on specific conditions.
+
+### Example
+
+```javascript
+let score = 100;
+
+if (score >= 80) {
+  console.log("Pass");
+} else {
+  console.log("Fail");
+}
+```
+
+### Explanation
+
+In this example:
+
+* If the score is 80 or higher, the program prints `"Pass"`.
+* Otherwise, it prints `"Fail"`.
+
+Conditional statements help control the flow of a program by executing different blocks of code depending on whether conditions are true or false.
+
+---
+
+## 5. What is a Loop, and When Would You Use One?
+
+A loop repeatedly executes a block of code while a specified condition remains true.
+
+### When will you use one  to Use Loops
+
+### An example of the one I use
+
+```javascript
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+```
+Using loops reduces code duplication and makes programs more efficient and easier to maintain.
+
+---
+
+# Modern JavaScript
+
+## 1. What Is Destructuring?
+
+Destructuring in JavaScript is a JavaScript feature that allows you to extract values from arrays or objects and assign them to variables in a concise or clear way.
+
+### Example
+
+```javascript
+const person = {
+  name: "Elizabeth",
+  age: 10
+};
+
+const { name, age } = person;
+```
+
+### Explanation
+
+In this example, the `name` and `age` properties are extracted from the `person` object and stored in variables with the same names.
+
+---
+
+## 2. Explain the Spread Operator and Rest Parameter
+
+### Spread Operator (`...`)
+
+The spread operator expands elements from an array or object.
+
+### Example
+
+```javascript
+const nums = [1, 2, 3, 4];
+const newNums = [....nums, 5];
+```
+
+### Result
+
+```javascript
+[1, 2, 3, 4, 5]
+```
+
+### Rest Parameter (`...`)
+
+The rest parameter collects multiple arguments into a single array.
+
+### Example
+
+```javascript
+function sum(...numbers) {
+  return numbers;
+}
+```
+### Explanation
+
+The `numbers` parameter becomes an array containing all arguments passed to the function.
+
+---
+
+## 3. What Problem Does Optional Chaining Solve?
+
+Optional chaining (`?.`) prevents errors when attempting to access properties that may not exist on an object.
+
+### Example
+
+```javascript
+const user = {};
+
+console.log(user.address?.city);
+```
+
+### Output
+
+```javascript
+undefined
+```
+
+### Explanation
+
+Without optional chaining, JavaScript would throw an error because `address` does not exist. With optional chaining, the expression safely returns `undefined`.
+
+---
+
+## 4. What Are the Advantages of Async/Await Over Callbacks?
+
+Async/Await provides a cleaner and more readable way to handle asynchronous operations.
+
+### Advantages of Asyn/Await Over Callbacks
+
+* It makes code easier to read and understand.
+* Cleaner and more organized syntax.
+* Better error handling using `try...catch`.
+* Avoids deeply nested callback functions, commonly known as "callback hell."
+
+### Example
+
+```javascript
+async function getData() {
+  try {
+    const data = await fetch(url);
+  } catch (error) {
+    console.log(error);
+  }
+}
+```
+
+---
+
+## 5. Explain the Difference Between `map()` and `filter()`
+
+### `map()`
+
+The `map()` method transforms every element in an array and returns a new array containing the transformed values.
+
+### Example
+
+```javascript
+const numbers = [1, 2, 3];
+const doubled = numbers.map(num => num * 2);
+```
+
+### Result
+
+```javascript
+[2, 4, 6]
+```
+
+### `filter()`
+
+The `filter()` method returns a new array containing only the elements that satisfy a specified condition.
+
+### Example
+
+```javascript
+const numbers = [1, 2, 3, 4];
+const even = numbers.filter(num => num % 2 === 0);
+```
+
+### Result
+
+```javascript
+[2, 4]
+```
+
+### Key Difference
+
+* `map()` transforms every element in an array.
+* `filter()` selects only elements that meet a condition.
+
+---
+
+## 6. Why Are ES6+ Features Important for Modern Development?
+
+ES6 and later versions of JavaScript introduced features that make code more powerful, readable, and maintainable.
+
+### Benefits of ES6+ Features
+
+* Reduce code complexity.
+* Improve readability and maintainability.
+* Increase developer productivity.
+* Introduce modern tools such as:
+
+  * Classes
+  * Modules
+  * Promises
+  * Async/Await
+  * Destructuring
+  * Arrow Functions
+  * Template Literals
+* Make JavaScript suitable for building large-scale and modern applications.
+
+
 
 
