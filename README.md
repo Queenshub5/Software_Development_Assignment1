@@ -41,15 +41,12 @@ Computers can execute code regardless of readability.
 ## 4. What Are Some Real-World Problems That Programming Can Solve?
 
 Programming can be used to solve a wide range of real-world problems, which are:
-
-* **Online Banking Systems** – Enable users to transfer money, pay bills, and manage accounts securely.
-* **Hospital Management Systems** – Help healthcare providers manage patient records, appointments, and treatments.
-* **School Management Platforms** – Support student registration, grading, attendance tracking, and communication.
-* **E-commerce Websites** – Allow businesses to sell products and services online.
-* **Traffic Control Systems** – Improve traffic flow and reduce congestion through automated monitoring and control.
-* **Weather Forecasting Systems** – Analyze weather data to predict future weather conditions.
-* **Inventory Management Systems** – Track stock levels, sales, and product availability.
-* **Mobile Applications** – Provide solutions for communication, entertainment, education, and business needs.
+**School Management Platforms**-  – Support student registration, grading and attendance tracking.
+**Online Banking Systems** – Enable users to transfer money, pay bills, and manage accounts securely.
+**Hospital Management Systems** – Help healthcare providers manage patient records, appointments, and treatments.
+**E-commerce Websites** – Allow businesses to sell products and services online.
+**Inventory Management Systems** – Track stock levels, sales, and product availability.
+**Mobile Applications** – Provide solutions for communication, entertainment, education, and business needs.
 
 # JavaScript Fundamentals
 
@@ -131,7 +128,120 @@ ECMAScript is the official standard specification upon which JavaScript is based
 ## 5. What Role Did Node.js Play in JavaScript's Growth?
 
 The role of Node.js in JavaScript growth is that Node.js allow JavaScript to run outside web browsers, making it possible to build backend servers and full-stack applications using a single programming language.
-
 As a result, developers can now use JavaScript for both front-end and back-end development.
+
+# Variables and Data Types
+
+## 1. Explain the Difference Between `var`, `let`, and `const`
+
+| Keyword | Scope          | Reassignable | Redeclarable |
+| ------- | -------------- | ------------ | ------------ |
+| `var`   | Function Scope | Yes          | Yes          |
+| `let`   | Block Scope    | Yes          | No           |
+| `const` | Block Scope    | No           | No           |
+
+### Explanation
+
+* **`var`** is function-scoped and can be reassigned and redeclared.
+* **`let`** is block-scoped and can be reassigned but cannot be redeclared within the same scope.
+* **`const`** is block-scoped and cannot be reassigned or redeclared after its initial assignment.
+
+---
+
+## 2. Why is `const` Preferred in Modern JavaScript?
+
+`const` is preferred because it:
+
+* Prevents accidental reassignment.
+* Makes code more predictable.
+* Improves readability and maintainability.
+* Helps reduce bugs caused by unintended changes to variable values.
+
+---
+
+## 3. Define the Following Primitive Data Types
+
+### String
+
+A string represents text values.
+
+```javascript
+let name = "John";
+```
+
+### Number
+
+A number represents numeric values.
+
+```javascript
+let age = 25;
+```
+
+### Boolean
+
+A boolean represents one of two values: `true` or `false`.
+
+```javascript
+let isLoggedIn = true;
+```
+
+### Null
+
+`null` represents an intentional absence of value.
+
+```javascript
+let user = null;
+```
+
+### Undefined
+
+`undefined` represents a variable that has been declared but has not been assigned a value.
+
+```javascript
+let city;
+```
+
+---
+
+## 4. What Does the `typeof` Operator Do?
+
+The `typeof` operator returns the data type of a value.
+
+### Examples
+
+```javascript
+typeof "Hello"; // string
+typeof 100;     // number
+typeof true;    // boolean
+```
+
+This operator is useful for checking the type of a variable during development and debugging.
+
+---
+
+## 5. What Are Template Literals and Why Are They Useful?
+
+Template literals are strings enclosed in backticks (`` ` ``) that allow variable interpolation and multi-line strings.
+
+### Example
+
+```javascript
+let name = "John";
+
+console.log(`Hello, ${name}`);
+```
+
+### Output
+
+```text
+Hello, John
+```
+
+### Benefits of Template Literals
+
+* Easier string interpolation using `${}`.
+* Improved readability.
+* Support for multi-line strings.
+* Cleaner and more maintainable code compared to traditional string concatenation.
 
 
