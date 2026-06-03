@@ -265,7 +265,7 @@ function add(a, b) {
 ### Arrow Function
 
 ```javascript
-const add = (a, b) => a + b;
+const add = (x, y) => x + y;
 ```
 
 ### Differences
@@ -289,10 +289,6 @@ function greet(name = "Guest") {
   return `Hello ${name}`;
 }
 ```
-
-### Explanation
-
-from the above code it means if no value is passed to the `name` parameter, the function automatically uses `"Guest"` as the default value.
 
 ---
 
