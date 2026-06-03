@@ -495,7 +495,7 @@ const even = numbers.filter(num => num % 2 === 0);
 
 ES6 and later versions of JavaScript introduced features that make code more powerful, readable, and maintainable.
 
-### Benefits of ES6+ Features
+### Reasons why ES6+ Features Important for Modern Development are as follows:-
 
 * Reduce code complexity.
 * Improve readability and maintainability.
@@ -510,6 +510,89 @@ ES6 and later versions of JavaScript introduced features that make code more pow
   * Arrow Functions
   * Template Literals
 * Make JavaScript suitable for building large-scale and modern applications.
+
+
+# Section B: JavaScript Practical Questions
+
+## 1. Create Variables to Store Your Name, Age, and Favorite Programming Language. Print Them Using a Template Literal.
+
+```javascript
+const name = "Elizabeth";
+const age = 10
+const favouriteProgrammingLanguage = "JavaScript";
+
+console.log(`My name is ${name}, I am ${age} years old, and my favourite programming language is ${favouriteProgrammingLanguage}.`);
+```
+
+### Output
+
+```text
+My name is Elizabeth, I am 10 years old, and my favourite programming language is JavaScript.
+```
+
+---
+
+## 2. Write a Program That Checks Whether a Number Is Positive, Negative, or Zero.
+
+```javascript
+const number = 10;
+
+if (number > 0)
+    {console.log("Positive");}
+else if (number < 0)
+    {console.log("Negative");}
+ else {console.log("Zero");}
+```
+
+### Output
+
+```text
+Positive
+```
+
+---
+
+## 3. Create a Function Called `greetUser` That Accepts a Name and Returns a Greeting Message.
+
+```javascript
+function greetUser(name) {
+  return `Hello, ${name}! Welcome.`;
+}
+
+console.log(greetUser("Elizabeth"));
+```
+
+### Output
+
+```text
+Hello, Elizabeth! Welcome.
+```
+
+---
+
+## 4. Write an Arrow Function That Multiplies Two Numbers.
+
+```javascript
+const multiply = (x, y) => x * y;
+
+console.log(multiply(8, 7));
+```
+### Output
+
+```text
+56
+```
+
+---
+
+## 5. Create a Loop That Prints Numbers From 1 to 20.
+
+```javascript
+for (let i = 1; i <= 20; i++) {
+  console.log(i);
+}
+```
+
 
 
 
