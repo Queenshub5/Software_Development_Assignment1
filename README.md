@@ -213,7 +213,7 @@ typeof true;    // boolean
 
 ## 5. What Are Template Literals and Why Are They Useful?
 
-Template literals are strings enclosed in backticks (`  `) that allow variable interpolation and multi-line strings.
+Template literals are strings enclosed in backticks (`) that allow variable interpolation and multi-line strings.
 
 ### Example
 
