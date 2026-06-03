@@ -103,8 +103,6 @@ JavaScript runs directly in web browsers such as:
 * Microsoft Edge
 * Safari
 
-It is commonly used to create interactive and dynamic web pages.
-
 ### 2. Node.js
 
 Node.js allows JavaScript to run on servers, making it possible to build backend applications and APIs.
@@ -114,9 +112,6 @@ Node.js allows JavaScript to run on servers, making it possible to build backend
 JavaScript can be used to develop mobile applications through frameworks such as React Native.
 
 ### 4. Desktop Applications
-
-JavaScript can be used to build desktop applications using frameworks such as Electron.
-
 ---
 
 ## 4. What is ECMAScript?
@@ -166,7 +161,7 @@ As a result, developers can now use JavaScript for both front-end and back-end d
 A string represents text values.
 
 ```javascript
-let name = "John";
+let name = "Elizabeth";
 ```
 
 ### Number
@@ -174,7 +169,7 @@ let name = "John";
 A number represents numeric values.
 
 ```javascript
-let age = 25;
+let age = 10;
 ```
 
 ### Boolean
@@ -195,7 +190,7 @@ let user = null;
 
 ### Undefined
 
-`undefined` represents a variable that has been declared but has not been assigned a value.
+`undefined` represents a variable that has been declared but no value has been assigned.
 
 ```javascript
 let city;
@@ -214,19 +209,16 @@ typeof "Hello"; // string
 typeof 100;     // number
 typeof true;    // boolean
 ```
-
-This operator is useful for checking the type of a variable during development and debugging.
-
 ---
 
 ## 5. What Are Template Literals and Why Are They Useful?
 
-Template literals are strings enclosed in backticks (`` ` ``) that allow variable interpolation and multi-line strings.
+Template literals are strings enclosed in backticks (`  `) that allow variable interpolation and multi-line strings.
 
 ### Example
 
 ```javascript
-let name = "John";
+let name = "ELizabeth";
 
 console.log(`Hello, ${name}`);
 ```
@@ -234,11 +226,12 @@ console.log(`Hello, ${name}`);
 ### Output
 
 ```text
-Hello, John
+Hello, Elizabeth
 ```
 
 ### Benefits of Template Literals
 
+Benefits of template literals are as follows:
 * Easier string interpolation using `${}`.
 * Improved readability.
 * Support for multi-line strings.
