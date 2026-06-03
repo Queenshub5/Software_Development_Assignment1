@@ -7,7 +7,9 @@
 According to W3Schools, "Programming is telling a computer what to do."
 **Source:** W3Schools. "Programming Intro." https://www.w3schools.com/programming/
 
-Programming is the process of creating instructions that tell a computer how to perform specific tasks. It is important because it enables developers to build software, automate processes, solve problems, and create applications that people use every day.
+Programming is the process of creating instructions that tell a computer how to execute specific tasks.
+
+It is important because it enables developers to build software, automate processes, solve problems, and create applications that people use every day.
 
 ---
 
