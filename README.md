@@ -325,7 +325,7 @@ A loop repeatedly executes a block of code while a specified condition remains t
 
 ### When will you use one  to Use Loops
 
-### An example of the one I use
+### An example
 
 ```javascript
 for (let i = 1; i <= 10; i++) {
@@ -352,10 +352,6 @@ const person = {
 
 const { name, age } = person;
 ```
-
-### Explanation
-
-In this example, the `name` and `age` properties are extracted from the `person` object and stored in variables with the same names.
 
 ---
 
